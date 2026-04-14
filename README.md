@@ -2,6 +2,8 @@
 
 # ToolmeshAI
 
+![ToolmeshAI social preview](./docs/assets/social-preview.png)
+
 Practical public repositories around MCP, agent workflows, docs-to-context tooling, and browser automation.
 
 If you are new here, start with [`mcp-saas-foundry`](https://github.com/ToolmeshAI/mcp-saas-foundry).
@@ -10,6 +12,7 @@ If you are new here, start with [`mcp-saas-foundry`](https://github.com/Toolmesh
 
 - [Profile launch note](./docs/releases/v0.1.0.md)
 - [Now](./docs/now.md)
+- [Launch kit](./docs/launch/README.md)
 - [Support](./SUPPORT.md)
 - [Security](./SECURITY.md)
 - [Code of conduct](./CODE_OF_CONDUCT.md)

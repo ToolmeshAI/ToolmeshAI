@@ -2,6 +2,8 @@
 
 # ToolmeshAI
 
+![ToolmeshAI social preview](./docs/assets/social-preview.png)
+
 围绕 MCP、agent workflow、docs-to-context 工具和浏览器自动化的实用型公开仓库集合。
 
 如果你是第一次来到这里，建议先看 [`mcp-saas-foundry`](https://github.com/ToolmeshAI/mcp-saas-foundry)。
@@ -10,6 +12,7 @@
 
 - [Profile 发布说明](./docs/releases/v0.1.0.md)
 - [Now / 当前聚焦](./docs/now.md)
+- [Launch Kit / 分发包](./docs/launch/README.md)
 - [支持说明](./SUPPORT.md)
 - [安全策略](./SECURITY.md)
 - [行为准则](./CODE_OF_CONDUCT.md)
