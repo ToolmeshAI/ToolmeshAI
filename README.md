@@ -22,8 +22,10 @@ If you are new here, start with [`mcp-saas-foundry`](https://github.com/Toolmesh
 Right now the goal is to sharpen a small, connected set of repositories instead of spreading effort across many loose experiments.
 
 - production-minded MCP foundations
+- executable MCP validation and smoke-test tooling
 - safer MCP and agent configuration
 - documentation pipelines that become usable AI context
+- browser-agent starter scaffolds with dry-run artifacts
 - browser-agent recipes that are short, repeatable, and worth shipping
 
 ## Featured Repositories
@@ -38,6 +40,13 @@ Right now the goal is to sharpen a small, connected set of repositories instead 
   Bilingual reference list of real MCP workflows, server patterns, and launch ideas.
 - [`browser-agent-recipes`](https://github.com/ToolmeshAI/browser-agent-recipes)
   Reusable browser automation recipes for agentic workflows.
+
+## Next Wave
+
+- [`mcp-smoke-test`](https://github.com/ToolmeshAI/mcp-smoke-test)
+  Zero-dependency CLI for validating whether a stdio MCP server can actually initialize and answer a basic probe.
+- [`browser-agent-starter`](https://github.com/ToolmeshAI/browser-agent-starter)
+  Minimal browser-ready starter with dry-run planning, shared config, and structured artifacts for runnable browser-agent workflows.
 
 ## Why Follow
 

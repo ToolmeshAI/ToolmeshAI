@@ -49,6 +49,38 @@ REPOS = {
         "shape": "pages",
         "command": ["node", "src/cli.mjs", "samples/docs"],
     },
+    "awesome-mcp-workflows": {
+        "tagline": "Bilingual catalog of MCP workflow patterns, server shapes, and launchable combinations with evidence labels.",
+        "eyebrow": "Curated Catalog",
+        "accent": "#7A5CFA",
+        "accent_soft": "#CEC4FF",
+        "shape": "workflow",
+        "command": None,
+    },
+    "browser-agent-recipes": {
+        "tagline": "Browser-native agent recipes with clear inputs, outputs, guardrails, and demo-ready operational value.",
+        "eyebrow": "Recipe Library",
+        "accent": "#E56B6F",
+        "accent_soft": "#F4C2C2",
+        "shape": "recipe",
+        "command": None,
+    },
+    "mcp-smoke-test": {
+        "tagline": "Zero-dependency CLI for proving a stdio MCP server can initialize and answer a real follow-up probe.",
+        "eyebrow": "Protocol Utility",
+        "accent": "#1F8A70",
+        "accent_soft": "#A7E3D6",
+        "shape": "scan",
+        "command": ["node", "bin/mcp-smoke-test.js", "--config", "examples/mcp.config.json", "--server", "fake-fixture", "--format", "text"],
+    },
+    "browser-agent-starter": {
+        "tagline": "Minimal browser-ready starter with dry-run planning, shared config, and structured artifacts for browser-agent workflows.",
+        "eyebrow": "Starter Scaffold",
+        "accent": "#C97B63",
+        "accent_soft": "#F2C6B4",
+        "shape": "workflow",
+        "command": ["node", "src/cli.js", "run", "docs-audit", "--config", "examples/docs-audit.json", "--output", "tmp/docs-audit-assets", "--dry-run"],
+    },
 }
 
 PALETTE = {
@@ -150,6 +182,27 @@ def draw_shape(draw: ImageDraw.ImageDraw, repo: str, accent: str, accent_soft: s
         for label, x, y, fill in cards:
             draw.rounded_rectangle((x, y, x + 180, y + 110), radius=20, fill=fill, outline=PALETTE["ink"], width=3)
             draw.text((x + 18, y + 34), label, font=load_font(FONT_SANS_BOLD, 26), fill=PALETTE["ink"])
+    elif REPOS[repo]["shape"] == "workflow":
+        nodes = [
+            ("server", 790, 150, accent),
+            ("workflow", 1000, 150, accent_soft),
+            ("recipe", 895, 310, "#E7D7C1"),
+        ]
+        for label, x, y, fill in nodes:
+            draw.rounded_rectangle((x, y, x + 210, y + 90), radius=24, fill=fill, outline=PALETTE["ink"], width=3)
+            draw.text((x + 24, y + 28), label, font=load_font(FONT_SANS_BOLD, 28), fill=PALETTE["ink"])
+        draw.line((915, 240, 955, 310), fill=accent, width=8)
+        draw.line((1105, 240, 1045, 310), fill=accent, width=8)
+    elif REPOS[repo]["shape"] == "recipe":
+        cards = [
+            ("qa", 770, 140, accent_soft),
+            ("ops", 980, 140, "#E7D7C1"),
+            ("support", 875, 300, accent),
+            ("finance", 1085, 300, accent_soft),
+        ]
+        for label, x, y, fill in cards:
+            draw.rounded_rectangle((x, y, x + 170, y + 96), radius=22, fill=fill, outline=PALETTE["ink"], width=3)
+            draw.text((x + 22, y + 30), label, font=load_font(FONT_SANS_BOLD, 26), fill=PALETTE["ink"])
 
 
 def make_social_card(repo: str, target: Path) -> None:

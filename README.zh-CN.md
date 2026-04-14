@@ -22,8 +22,10 @@
 现在更强调把少量彼此关联的仓库打磨清楚，而不是同时铺很多松散实验。
 
 - 面向生产使用的 MCP 基础设施与仓库骨架
+- 可执行的 MCP 验证与 smoke-test 工具
 - 更安全的 MCP 与 agent 配置
 - 把原始文档整理成 AI 可直接消费上下文的工具链
+- 带 dry-run 产物的 browser-agent starter scaffold
 - 短小、可复用、适合落地的 browser agent recipes
 
 ## 重点仓库
@@ -38,6 +40,13 @@
   中英双语整理真实 MCP 工作流、服务模式与可落地方向。
 - [`browser-agent-recipes`](https://github.com/ToolmeshAI/browser-agent-recipes)
   面向 agent workflow 的可复用浏览器自动化 recipe。
+
+## 第二波仓库
+
+- [`mcp-smoke-test`](https://github.com/ToolmeshAI/mcp-smoke-test)
+  零依赖 CLI，用来验证一个 stdio MCP server 是否真的能初始化并完成基础探测。
+- [`browser-agent-starter`](https://github.com/ToolmeshAI/browser-agent-starter)
+  面向可运行 browser-agent workflow 的最小 starter，带 dry-run 规划、统一配置和结构化产物。
 
 ## 为什么值得关注
 

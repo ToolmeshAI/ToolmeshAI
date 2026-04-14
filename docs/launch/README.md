@@ -6,6 +6,7 @@ This folder contains the first outbound distribution kit for the `ToolmeshAI` po
 
 What is here:
 
+- `launch-queue.md`: operator runbook with platform status, posting order, direct submission links, and repo-by-repo queue
 - `x.md`: short launch posts for X
 - `reddit.md`: post ideas for Reddit-style communities
 - `hacker-news.md`: titles and launch angles for Hacker News
@@ -33,6 +34,7 @@ Asset usage:
 
 内容包括：
 
+- `launch-queue.md`：执行队列文档，包含平台状态、发帖顺序、直达发布链接和按仓库拆分的队列
 - `x.md`：适合发到 X 的短帖文案
 - `reddit.md`：适合 Reddit 类社区的发帖文案
 - `hacker-news.md`：适合 Hacker News 的标题和角度
