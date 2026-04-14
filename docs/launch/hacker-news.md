@@ -23,6 +23,10 @@ Why first:
 
 `Show HN: llms-txt-check – validate your repo's llms.txt before weak summaries or broken links go public`
 
+`Show HN: openapi-to-context – turn noisy OpenAPI specs into clean Markdown or JSON context for agents`
+
+`Show HN: llms-txt-builder – build a publishable llms.txt in one command`
+
 `Show HN: mcp-http-smoke – prove that an HTTP MCP endpoint can initialize and answer one real probe`
 
 ### Submission note
@@ -34,6 +38,8 @@ On HN, lead with the concrete pain:
 - MCP configs leak risky patterns into public examples
 - docs-to-agent context prep is still manual
 - repos still publish weak `llms.txt` files without validation
+- OpenAPI specs are still too noisy to hand directly to agents
+- repo owners still need a fast way to draft a clean `llms.txt`
 - hosted MCP endpoints need a fast HTTP-side smoke test too
 
 Keep the text short and let the repo explain the rest.
@@ -61,6 +67,10 @@ Keep the text short and let the repo explain the rest.
 
 `Show HN: llms-txt-check – validate your repo's llms.txt before weak summaries or broken links go public`
 
+`Show HN: openapi-to-context – turn noisy OpenAPI specs into clean Markdown or JSON context for agents`
+
+`Show HN: llms-txt-builder – build a publishable llms.txt in one command`
+
 `Show HN: mcp-http-smoke – prove that an HTTP MCP endpoint can initialize and answer one real probe`
 
 ### 提交策略
@@ -72,6 +82,8 @@ HN 上最重要的是先讲具体痛点：
 - MCP 配置容易把危险模式带进公开示例
 - 文档转 agent 上下文这件事还太手工
 - 很多仓库的 `llms.txt` 还是在没有校验的情况下直接公开
+- 原始 OpenAPI spec 还是太吵，不适合直接交给 agent
+- 很多仓库也还缺一个快速生成 `llms.txt` 草稿的工具
 - hosted MCP endpoint 也需要快速的 HTTP 侧 smoke test
 
 正文保持短，让仓库自己承担主要解释工作。

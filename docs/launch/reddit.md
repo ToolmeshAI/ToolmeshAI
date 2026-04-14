@@ -84,6 +84,43 @@ More repos are adding `llms.txt`, but a lot of them still ship weak summaries, d
 Repo:
 https://github.com/ToolmeshAI/llms-txt-check
 
+### `openapi-to-context`
+
+Title:
+`I built a small CLI that turns OpenAPI specs into clean context for coding agents`
+
+Body:
+Raw OpenAPI files are useful, but they are still noisy when you just want the implementation-relevant brief.
+
+`openapi-to-context` takes one local OpenAPI 3.x JSON or YAML file and extracts:
+- auth schemes
+- grouped operations by tag
+- required params
+- request body media types
+- main response codes
+
+It outputs Markdown by default and JSON when you want something machine-readable.
+
+Repo:
+https://github.com/ToolmeshAI/openapi-to-context
+
+### `llms-txt-builder`
+
+Title:
+`I built a zero-dependency CLI to draft llms.txt from repo metadata and docs`
+
+Body:
+`llms-txt-builder` is the generation-side companion to `llms-txt-check`.
+
+Instead of only validating `llms.txt`, it helps you create a publishable draft from:
+- title + summary
+- selected docs
+- examples
+- optional repo URL expansion for links
+
+Repo:
+https://github.com/ToolmeshAI/llms-txt-builder
+
 ### `mcp-http-smoke`
 
 Title:
@@ -130,6 +167,22 @@ I wanted a very small GitHub Action that takes normal workflow inputs and writes
 
 Repo:
 https://github.com/ToolmeshAI/github-agent-action
+
+### `release-brief-action`
+
+Title:
+`I built a small GitHub Action that turns commit ranges into a release brief + JSON manifest`
+
+Body:
+I wanted a lightweight action that sits between raw commits and a public release.
+
+`release-brief-action` reads commit subjects between two refs, groups them by conventional prefix, and writes:
+- `release-brief.md`
+- `release-manifest.json`
+- GitHub output paths for downstream steps
+
+Repo:
+https://github.com/ToolmeshAI/release-brief-action
 
 ## 中文
 
@@ -213,6 +266,43 @@ https://github.com/ToolmeshAI/docs-to-context
 仓库：
 https://github.com/ToolmeshAI/llms-txt-check
 
+### `openapi-to-context`
+
+标题：
+`我做了一个小 CLI，把 OpenAPI spec 整理成给 coding agent 用的干净上下文`
+
+正文：
+原始 OpenAPI 文件当然有价值，但如果你只是想拿到一份实现相关的 brief，它还是太吵了。
+
+`openapi-to-context` 支持读取一个本地 OpenAPI 3.x JSON 或 YAML 文件，并提取：
+- 认证方式
+- 按 tag 分组的接口
+- 必填参数
+- 请求体媒体类型
+- 主要响应码
+
+默认输出 Markdown，需要机器可读结果时也能输出 JSON。
+
+仓库：
+https://github.com/ToolmeshAI/openapi-to-context
+
+### `llms-txt-builder`
+
+标题：
+`我做了一个零依赖 CLI，用来根据仓库元信息和文档生成 llms.txt 草稿`
+
+正文：
+`llms-txt-builder` 是 `llms-txt-check` 的生成侧配套工具。
+
+它不是只校验 `llms.txt`，而是帮助你根据这些信息直接生成一份可发布草稿：
+- 标题和摘要
+- 指定文档
+- examples
+- 可选的 repo URL 链接展开
+
+仓库：
+https://github.com/ToolmeshAI/llms-txt-builder
+
 ### `mcp-http-smoke`
 
 标题：
@@ -259,3 +349,19 @@ https://github.com/ToolmeshAI/browser-agent-starter
 
 仓库：
 https://github.com/ToolmeshAI/github-agent-action
+
+### `release-brief-action`
+
+标题：
+`我做了一个小 GitHub Action，把 commit 范围整理成 release brief 和 JSON manifest`
+
+正文：
+我想要一个很轻的 action，能放在原始 commits 和正式 release 之间，先生成一份可读、可交接的中间产物。
+
+`release-brief-action` 会读取两段 ref 之间的 commit subject，按 conventional 前缀分组，然后输出：
+- `release-brief.md`
+- `release-manifest.json`
+- 供后续步骤使用的 GitHub output 路径
+
+仓库：
+https://github.com/ToolmeshAI/release-brief-action

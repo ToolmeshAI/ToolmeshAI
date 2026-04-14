@@ -26,8 +26,11 @@ Right now the goal is to sharpen a small, connected set of repositories instead 
 - safer MCP and agent configuration
 - documentation pipelines that become usable AI context
 - `llms.txt` validation and repo-facing context hygiene
+- OpenAPI contract compression for agent-ready API briefs
+- `llms.txt` generation for bilingual or multi-doc repositories
 - HTTP MCP smoke checks for teams moving beyond stdio demos
 - GitHub-native agent handoff artifacts for workflow automation
+- release briefs generated directly from git history
 - browser-agent starter scaffolds with dry-run artifacts
 - browser-agent recipes that are short, repeatable, and worth shipping
 
@@ -50,12 +53,18 @@ Right now the goal is to sharpen a small, connected set of repositories instead 
   Zero-dependency CLI for validating whether a stdio MCP server can actually initialize and answer a basic probe.
 - [`llms-txt-check`](https://github.com/ToolmeshAI/llms-txt-check)
   Zero-dependency CLI for checking whether your `llms.txt` is strong enough to publish.
+- [`openapi-to-context`](https://github.com/ToolmeshAI/openapi-to-context)
+  Contract-side CLI for turning one OpenAPI file into a compact Markdown or JSON brief for agents.
+- [`llms-txt-builder`](https://github.com/ToolmeshAI/llms-txt-builder)
+  Zero-dependency CLI for drafting a publishable `llms.txt` from repo metadata and selected docs.
 - [`mcp-http-smoke`](https://github.com/ToolmeshAI/mcp-http-smoke)
   HTTP-side MCP smoke tester for `initialize`, `initialized`, and one live capability probe.
 - [`browser-agent-starter`](https://github.com/ToolmeshAI/browser-agent-starter)
   Minimal browser-ready starter with dry-run planning, shared config, and structured artifacts for runnable browser-agent workflows.
 - [`github-agent-action`](https://github.com/ToolmeshAI/github-agent-action)
   Small GitHub Action for turning workflow inputs into reusable execution briefs and JSON manifests.
+- [`release-brief-action`](https://github.com/ToolmeshAI/release-brief-action)
+  Small GitHub Action that converts a git ref range into release-ready Markdown and JSON artifacts.
 
 ## Why Follow
 

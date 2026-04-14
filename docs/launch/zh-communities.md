@@ -18,10 +18,13 @@ The recommended order is still flagship-first:
 3. `safe-mcp-config`
 4. `docs-to-context`
 5. `llms-txt-check`
-6. `mcp-http-smoke`
-7. `browser-agent-starter`
-8. `github-agent-action`
-9. `ToolmeshAI`
+6. `openapi-to-context`
+7. `llms-txt-builder`
+8. `mcp-http-smoke`
+9. `browser-agent-starter`
+10. `github-agent-action`
+11. `release-brief-action`
+12. `ToolmeshAI`
 
 ---
 
@@ -40,16 +43,19 @@ The recommended order is still flagship-first:
 3. `safe-mcp-config`
 4. `docs-to-context`
 5. `llms-txt-check`
-6. `mcp-http-smoke`
-7. `browser-agent-starter`
-8. `github-agent-action`
-9. `ToolmeshAI`
+6. `openapi-to-context`
+7. `llms-txt-builder`
+8. `mcp-http-smoke`
+9. `browser-agent-starter`
+10. `github-agent-action`
+11. `release-brief-action`
+12. `ToolmeshAI`
 
 ## 长帖模板
 
 这两天把 GitHub 账号重新整理成了 `ToolmeshAI`，开始集中做一批更像“能拿来用”的项目，而不是继续铺很多空壳仓库。
 
-现在最适合先推的 8 个是：
+现在最适合先推的 11 个是：
 
 1. `mcp-saas-foundry`
    一个可 fork 的 SaaS 向 MCP starter blueprint，目标是补上“玩具 demo”和“团队能直接起步的 starter”之间的空白。
@@ -66,14 +72,23 @@ The recommended order is still flagship-first:
 5. `llms-txt-check`
    一个零依赖 CLI，用来在 `llms.txt` 公开前先检查标题、摘要、链接和常见结构问题。
 
-6. `mcp-http-smoke`
+6. `openapi-to-context`
+   一个轻量 CLI，把单个 OpenAPI 文件整理成更适合 agent 使用的 Markdown 或 JSON brief。
+
+7. `llms-txt-builder`
+   一个零依赖 CLI，根据仓库元信息、文档和示例快速生成可发布的 `llms.txt` 草稿。
+
+8. `mcp-http-smoke`
    一个轻量 HTTP MCP smoke tester，用来确认 endpoint 能完成 `initialize`、接受 `initialized`，并返回一次真实 capability probe。
 
-7. `browser-agent-starter`
+9. `browser-agent-starter`
    一个 browser-ready 的最小 starter，用 dry-run 规划和结构化产物把 browser agent workflow 先做成可信的起点。
 
-8. `github-agent-action`
+10. `github-agent-action`
    一个小型 GitHub Action，把 workflow 输入整理成可复用的执行简报和 JSON manifest，方便后续 agent 或人工接手。
+
+11. `release-brief-action`
+   一个小型 GitHub Action，把两段 git ref 之间的 commit 变化整理成 release brief 和 JSON manifest，适合 release handoff。
 
 GitHub:
 https://github.com/ToolmeshAI
@@ -115,6 +130,20 @@ https://github.com/ToolmeshAI/docs-to-context
 仓库：
 https://github.com/ToolmeshAI/llms-txt-check
 
+### `openapi-to-context`
+
+`openapi-to-context` 用来把原始 OpenAPI spec 压成更适合 coding agent 使用的 Markdown 或 JSON 上下文，不用每次都直接喂整份规范。
+
+仓库：
+https://github.com/ToolmeshAI/openapi-to-context
+
+### `llms-txt-builder`
+
+`llms-txt-builder` 用来快速生成一份可发布的 `llms.txt` 草稿，适合和 `llms-txt-check` 搭配做“先生成，再校验”。
+
+仓库：
+https://github.com/ToolmeshAI/llms-txt-builder
+
 ### `mcp-http-smoke`
 
 `mcp-http-smoke` 是 HTTP 侧的 MCP smoke tester，适合在 endpoint 对外之前先确认 `initialize`、`initialized` 和 capability probe 都正常。
@@ -135,3 +164,10 @@ https://github.com/ToolmeshAI/browser-agent-starter
 
 仓库：
 https://github.com/ToolmeshAI/github-agent-action
+
+### `release-brief-action`
+
+`release-brief-action` 把一段 git ref 范围里的 commit subject 整理成 release brief 和 JSON manifest，适合发布前 handoff。
+
+仓库：
+https://github.com/ToolmeshAI/release-brief-action

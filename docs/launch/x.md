@@ -93,7 +93,34 @@ Useful when you move from stdio demos to hosted MCP endpoints.
 Repo:
 https://github.com/ToolmeshAI/mcp-http-smoke
 
-### Post 8: `github-agent-action`
+### Post 8: `openapi-to-context`
+
+Built `openapi-to-context` because raw OpenAPI specs are still too noisy to hand directly to coding agents.
+
+This CLI turns one local OpenAPI file into a compact brief with:
+- grouped operations by tag
+- auth schemes
+- required params
+- request body media types
+- main response codes
+
+Repo:
+https://github.com/ToolmeshAI/openapi-to-context
+
+### Post 9: `llms-txt-builder`
+
+`llms-txt-builder` is the draft-first companion to `llms-txt-check`.
+
+Instead of only asking whether `llms.txt` is valid enough, it helps you generate one fast from:
+- repo metadata
+- selected docs
+- examples
+- bilingual doc links
+
+Repo:
+https://github.com/ToolmeshAI/llms-txt-builder
+
+### Post 10: `github-agent-action`
 
 Built `github-agent-action` for one narrow but useful job:
 turn GitHub workflow inputs into a clean execution brief and JSON manifest for later agent or operator runs.
@@ -105,7 +132,20 @@ Easy to audit.
 Repo:
 https://github.com/ToolmeshAI/github-agent-action
 
-### Post 9: portfolio thread
+### Post 11: `release-brief-action`
+
+Built `release-brief-action` because release automation often jumps straight from commits to publishing without a clean human-readable handoff.
+
+This action:
+- reads commit subjects between refs
+- groups conventional commits
+- writes a markdown release brief
+- writes a JSON release manifest
+
+Repo:
+https://github.com/ToolmeshAI/release-brief-action
+
+### Post 12: portfolio thread
 
 I renamed the account to `ToolmeshAI` and started a tighter open-source portfolio around:
 - MCP tooling
@@ -211,7 +251,34 @@ https://github.com/ToolmeshAI/llms-txt-check
 仓库：
 https://github.com/ToolmeshAI/mcp-http-smoke
 
-### 帖子 8：`github-agent-action`
+### 帖子 8：`openapi-to-context`
+
+我做了一个 `openapi-to-context`，因为原始 OpenAPI spec 还是太吵，不适合直接交给 coding agent。
+
+这个 CLI 会把单个本地 OpenAPI 文件整理成一份更干净的 brief，包括：
+- 按 tag 分组的接口
+- 认证方式
+- 必填参数
+- 请求体媒体类型
+- 主要响应码
+
+仓库：
+https://github.com/ToolmeshAI/openapi-to-context
+
+### 帖子 9：`llms-txt-builder`
+
+`llms-txt-builder` 是 `llms-txt-check` 的生成侧配套工具。
+
+它不是只问“这份 `llms.txt` 合不合格”，而是帮助你直接根据这些信息快速生成一份：
+- repo 元信息
+- 指定 docs
+- examples
+- 双语文档链接
+
+仓库：
+https://github.com/ToolmeshAI/llms-txt-builder
+
+### 帖子 10：`github-agent-action`
 
 我做了一个 `github-agent-action`，目标很窄但很实用：
 把 GitHub workflow 输入整理成干净的执行简报和 JSON manifest，方便后续 agent 或人工继续接手。
@@ -223,7 +290,20 @@ https://github.com/ToolmeshAI/mcp-http-smoke
 仓库：
 https://github.com/ToolmeshAI/github-agent-action
 
-### 帖子 9：作品集串帖
+### 帖子 11：`release-brief-action`
+
+我做了一个 `release-brief-action`，因为很多 release automation 都是从 commits 直接跳到发布，没有一个干净、可读、可 handoff 的中间层。
+
+这个 action 会：
+- 读取一段 ref 范围内的 commit subject
+- 按 conventional commit 分组
+- 生成 markdown release brief
+- 生成 JSON release manifest
+
+仓库：
+https://github.com/ToolmeshAI/release-brief-action
+
+### 帖子 12：作品集串帖
 
 我把账号改成了 `ToolmeshAI`，然后开始更聚焦地做一套开源作品集，方向包括：
 - MCP tooling
