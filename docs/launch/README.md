@@ -19,10 +19,13 @@ Recommended posting order:
 2. `mcp-smoke-test`
 3. `safe-mcp-config`
 4. `docs-to-context`
-5. `browser-agent-starter`
-6. `ToolmeshAI`
-7. `awesome-mcp-workflows`
-8. `browser-agent-recipes`
+5. `llms-txt-check`
+6. `mcp-http-smoke`
+7. `browser-agent-starter`
+8. `github-agent-action`
+9. `ToolmeshAI`
+10. `awesome-mcp-workflows`
+11. `browser-agent-recipes`
 
 Asset usage:
 
@@ -49,10 +52,13 @@ Asset usage:
 2. `mcp-smoke-test`
 3. `safe-mcp-config`
 4. `docs-to-context`
-5. `browser-agent-starter`
-6. `ToolmeshAI`
-7. `awesome-mcp-workflows`
-8. `browser-agent-recipes`
+5. `llms-txt-check`
+6. `mcp-http-smoke`
+7. `browser-agent-starter`
+8. `github-agent-action`
+9. `ToolmeshAI`
+10. `awesome-mcp-workflows`
+11. `browser-agent-recipes`
 
 素材使用建议：
 

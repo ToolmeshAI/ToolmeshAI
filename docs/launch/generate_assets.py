@@ -73,6 +73,22 @@ REPOS = {
         "shape": "scan",
         "command": ["node", "bin/mcp-smoke-test.js", "--config", "examples/mcp.config.json", "--server", "fake-fixture", "--format", "text"],
     },
+    "llms-txt-check": {
+        "tagline": "Zero-dependency CLI for validating llms.txt structure before broken links or weak summaries reach production repos.",
+        "eyebrow": "Context Utility",
+        "accent": "#3C6E71",
+        "accent_soft": "#BFD7D9",
+        "shape": "pages",
+        "command": ["node", "bin/llms-txt-check.js", "--file", "examples/good/llms.txt", "--format", "text"],
+    },
+    "mcp-http-smoke": {
+        "tagline": "Minimal HTTP MCP smoke tester that proves initialize, initialized, and one real capability probe over JSON-RPC.",
+        "eyebrow": "HTTP Utility",
+        "accent": "#0E9594",
+        "accent_soft": "#9AD1D4",
+        "shape": "scan",
+        "command": ["node", "scripts/demo.js"],
+    },
     "browser-agent-starter": {
         "tagline": "Minimal browser-ready starter with dry-run planning, shared config, and structured artifacts for browser-agent workflows.",
         "eyebrow": "Starter Scaffold",
@@ -80,6 +96,14 @@ REPOS = {
         "accent_soft": "#F2C6B4",
         "shape": "workflow",
         "command": ["node", "src/cli.js", "run", "docs-audit", "--config", "examples/docs-audit.json", "--output", "tmp/docs-audit-assets", "--dry-run"],
+    },
+    "github-agent-action": {
+        "tagline": "Small GitHub Action that turns workflow inputs into reusable execution briefs and JSON manifests for later agent runs.",
+        "eyebrow": "Workflow Action",
+        "accent": "#355070",
+        "accent_soft": "#B9C6D3",
+        "shape": "workflow",
+        "command": ["node", "scripts/demo.js"],
     },
 }
 

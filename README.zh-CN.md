@@ -25,6 +25,9 @@
 - 可执行的 MCP 验证与 smoke-test 工具
 - 更安全的 MCP 与 agent 配置
 - 把原始文档整理成 AI 可直接消费上下文的工具链
+- 面向 `llms.txt` 的校验和仓库上下文卫生工具
+- 面向 HTTP MCP endpoint 的 smoke-check 工具
+- 面向 GitHub workflow 的 agent handoff 产物生成
 - 带 dry-run 产物的 browser-agent starter scaffold
 - 短小、可复用、适合落地的 browser agent recipes
 
@@ -45,14 +48,21 @@
 
 - [`mcp-smoke-test`](https://github.com/ToolmeshAI/mcp-smoke-test)
   零依赖 CLI，用来验证一个 stdio MCP server 是否真的能初始化并完成基础探测。
+- [`llms-txt-check`](https://github.com/ToolmeshAI/llms-txt-check)
+  零依赖 CLI，用来检查一个仓库的 `llms.txt` 结构、摘要和链接是否适合公开发布。
+- [`mcp-http-smoke`](https://github.com/ToolmeshAI/mcp-http-smoke)
+  面向 HTTP MCP endpoint 的 smoke tester，会跑 `initialize`、`initialized` 和一次真实 capability probe。
 - [`browser-agent-starter`](https://github.com/ToolmeshAI/browser-agent-starter)
   面向可运行 browser-agent workflow 的最小 starter，带 dry-run 规划、统一配置和结构化产物。
+- [`github-agent-action`](https://github.com/ToolmeshAI/github-agent-action)
+  小型 GitHub Action，把 workflow 输入整理成可复用的执行简报和 JSON manifest。
 
 ## 为什么值得关注
 
 - 这些仓库是互相支撑的一组作品，不是彼此割裂的 demo
 - 更强调可用的 alpha 质量，而不是空壳 scaffold
 - 采用英文主 README 与中文镜像，兼顾 GitHub 发现和中文传播
+- 新仓库只有在能增强整组导航和实际用途时才会留下
 
 ## 更新节奏
 

@@ -71,6 +71,33 @@ This repo exists because feeding docs into AI workflows is still too manual.
 Repo:
 https://github.com/ToolmeshAI/docs-to-context
 
+### `llms-txt-check`
+
+Title:
+`I built a tiny CLI to validate llms.txt files before they go public`
+
+Body:
+More repos are adding `llms.txt`, but a lot of them still ship weak summaries, duplicate headings, or malformed links.
+
+`llms-txt-check` is a zero-dependency CLI that catches those obvious issues before the file lands in a public repo, docs page, or AI-tooling index.
+
+Repo:
+https://github.com/ToolmeshAI/llms-txt-check
+
+### `mcp-http-smoke`
+
+Title:
+`I built a small HTTP MCP smoke tester for initialize + one real probe`
+
+Body:
+`mcp-http-smoke` exists for the hosted-endpoint side of MCP, where I still wanted the same fast answer:
+does this endpoint really initialize, accept `initialized`, and answer one live capability probe?
+
+It uses Node 20 `fetch`, stays lightweight, and is easy to run against local gateways or deployed MCP endpoints.
+
+Repo:
+https://github.com/ToolmeshAI/mcp-http-smoke
+
 ### `browser-agent-starter`
 
 Title:
@@ -87,6 +114,22 @@ This repo exists because a lot of browser-agent examples jump straight to flashy
 
 Repo:
 https://github.com/ToolmeshAI/browser-agent-starter
+
+### `github-agent-action`
+
+Title:
+`github-agent-action: turn workflow inputs into a clean execution brief and manifest`
+
+Body:
+I wanted a very small GitHub Action that takes normal workflow inputs and writes a durable handoff artifact for an agent or operator.
+
+`github-agent-action` outputs:
+- a markdown execution brief
+- a JSON manifest
+- GitHub output paths for downstream workflow steps
+
+Repo:
+https://github.com/ToolmeshAI/github-agent-action
 
 ## 中文
 
@@ -157,6 +200,33 @@ https://github.com/ToolmeshAI/mcp-smoke-test
 仓库：
 https://github.com/ToolmeshAI/docs-to-context
 
+### `llms-txt-check`
+
+标题：
+`我做了一个小 CLI，用来在 llms.txt 公开前先做校验`
+
+正文：
+现在越来越多仓库开始加 `llms.txt`，但很多文件里还是会带着弱摘要、重复标题和损坏链接直接上线。
+
+`llms-txt-check` 是一个零依赖 CLI，专门在文件进入公开仓库、文档页面或 AI 工具索引前先抓这些明显问题。
+
+仓库：
+https://github.com/ToolmeshAI/llms-txt-check
+
+### `mcp-http-smoke`
+
+标题：
+`我做了一个很小的 HTTP MCP smoke tester，用来验证 initialize + 真实 probe`
+
+正文：
+`mcp-http-smoke` 是给 hosted endpoint 这一侧准备的 MCP 工具，我想要的还是那个简单答案：
+这个 endpoint 到底能不能完成 `initialize`、接受 `initialized`，并返回一次真实 capability probe？
+
+它基于 Node 20 `fetch`，很轻，适合对本地 gateway 或已部署 MCP endpoint 做快速检查。
+
+仓库：
+https://github.com/ToolmeshAI/mcp-http-smoke
+
 ### `browser-agent-starter`
 
 标题：
@@ -173,3 +243,19 @@ https://github.com/ToolmeshAI/docs-to-context
 
 仓库：
 https://github.com/ToolmeshAI/browser-agent-starter
+
+### `github-agent-action`
+
+标题：
+`github-agent-action：把 workflow 输入整理成干净的执行简报和 manifest`
+
+正文：
+我想要一个非常小的 GitHub Action，把普通 workflow 输入整理成后续 agent 或人工可以直接接手的交付物。
+
+`github-agent-action` 会输出：
+- Markdown 执行简报
+- JSON manifest
+- 供后续步骤继续消费的 GitHub output 路径
+
+仓库：
+https://github.com/ToolmeshAI/github-agent-action

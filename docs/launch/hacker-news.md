@@ -21,6 +21,10 @@ Why first:
 
 `Show HN: docs-to-context – bundle scattered docs into one Markdown context file for coding agents`
 
+`Show HN: llms-txt-check – validate your repo's llms.txt before weak summaries or broken links go public`
+
+`Show HN: mcp-http-smoke – prove that an HTTP MCP endpoint can initialize and answer one real probe`
+
 ### Submission note
 
 On HN, lead with the concrete pain:
@@ -29,6 +33,8 @@ On HN, lead with the concrete pain:
 - it is still too hard to verify whether an MCP server actually interoperates
 - MCP configs leak risky patterns into public examples
 - docs-to-agent context prep is still manual
+- repos still publish weak `llms.txt` files without validation
+- hosted MCP endpoints need a fast HTTP-side smoke test too
 
 Keep the text short and let the repo explain the rest.
 
@@ -53,6 +59,10 @@ Keep the text short and let the repo explain the rest.
 
 `Show HN: docs-to-context – bundle scattered docs into one Markdown context file for coding agents`
 
+`Show HN: llms-txt-check – validate your repo's llms.txt before weak summaries or broken links go public`
+
+`Show HN: mcp-http-smoke – prove that an HTTP MCP endpoint can initialize and answer one real probe`
+
 ### 提交策略
 
 HN 上最重要的是先讲具体痛点：
@@ -61,5 +71,7 @@ HN 上最重要的是先讲具体痛点：
 - 现在依然很难快速验证一个 MCP server 是否真的能互操作
 - MCP 配置容易把危险模式带进公开示例
 - 文档转 agent 上下文这件事还太手工
+- 很多仓库的 `llms.txt` 还是在没有校验的情况下直接公开
+- hosted MCP endpoint 也需要快速的 HTTP 侧 smoke test
 
 正文保持短，让仓库自己承担主要解释工作。

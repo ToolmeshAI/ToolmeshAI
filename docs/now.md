@@ -9,6 +9,9 @@ This page tracks what ToolmeshAI is actively sharpening in public right now.
 - Keep `mcp-saas-foundry` as the flagship reference point for the account
 - Improve safety and operational clarity in `safe-mcp-config`
 - Make `docs-to-context` more useful as real docs-to-AI-context infrastructure
+- Add sharper repo-context surfaces with `llms-txt-check`
+- Cover HTTP MCP verification with `mcp-http-smoke`
+- Keep `github-agent-action` honest and useful as a lightweight handoff action
 - Keep `awesome-mcp-workflows` and `browser-agent-recipes` practical, short, and reusable
 
 ## What Is Not The Focus

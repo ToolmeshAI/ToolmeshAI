@@ -66,12 +66,53 @@ It gives you:
 Repo:
 https://github.com/ToolmeshAI/browser-agent-starter
 
-### Post 6: portfolio thread
+### Post 6: `llms-txt-check`
+
+Built `llms-txt-check` because more repos are adding `llms.txt`, but a lot of them still ship weak summaries, malformed links, or messy structure.
+
+This CLI checks:
+- title + summary
+- duplicate headings
+- malformed markdown links
+- unusual section ordering
+
+Repo:
+https://github.com/ToolmeshAI/llms-txt-check
+
+### Post 7: `mcp-http-smoke`
+
+`mcp-http-smoke` is the HTTP-side companion to `mcp-smoke-test`.
+
+It verifies an MCP endpoint can:
+- handle `initialize`
+- accept `initialized`
+- answer one real capability probe
+
+Useful when you move from stdio demos to hosted MCP endpoints.
+
+Repo:
+https://github.com/ToolmeshAI/mcp-http-smoke
+
+### Post 8: `github-agent-action`
+
+Built `github-agent-action` for one narrow but useful job:
+turn GitHub workflow inputs into a clean execution brief and JSON manifest for later agent or operator runs.
+
+Small surface area.
+Honest scope.
+Easy to audit.
+
+Repo:
+https://github.com/ToolmeshAI/github-agent-action
+
+### Post 9: portfolio thread
 
 I renamed the account to `ToolmeshAI` and started a tighter open-source portfolio around:
 - MCP tooling
 - safer config workflows
 - docs-to-context pipelines
+- repo context hygiene
+- GitHub workflow handoff utilities
 - browser-agent recipes
 
 Start here:
@@ -143,12 +184,53 @@ https://github.com/ToolmeshAI/docs-to-context
 仓库：
 https://github.com/ToolmeshAI/browser-agent-starter
 
-### 帖子 6：作品集串帖
+### 帖子 6：`llms-txt-check`
+
+我做了一个 `llms-txt-check`，因为越来越多仓库开始加 `llms.txt`，但很多内容还是会带着弱摘要、坏链接和混乱结构直接上线。
+
+这个 CLI 会检查：
+- 标题和摘要
+- 重复标题
+- 损坏的 Markdown 链接
+- 不合理的章节顺序
+
+仓库：
+https://github.com/ToolmeshAI/llms-txt-check
+
+### 帖子 7：`mcp-http-smoke`
+
+`mcp-http-smoke` 可以看成 `mcp-smoke-test` 的 HTTP 版。
+
+它会验证一个 MCP endpoint 能不能：
+- 正常处理 `initialize`
+- 接受 `initialized`
+- 返回一次真实 capability probe
+
+很适合从 stdio demo 走向 hosted endpoint 的阶段。
+
+仓库：
+https://github.com/ToolmeshAI/mcp-http-smoke
+
+### 帖子 8：`github-agent-action`
+
+我做了一个 `github-agent-action`，目标很窄但很实用：
+把 GitHub workflow 输入整理成干净的执行简报和 JSON manifest，方便后续 agent 或人工继续接手。
+
+表面小。
+定位诚实。
+容易审计。
+
+仓库：
+https://github.com/ToolmeshAI/github-agent-action
+
+### 帖子 9：作品集串帖
 
 我把账号改成了 `ToolmeshAI`，然后开始更聚焦地做一套开源作品集，方向包括：
 - MCP tooling
 - 更安全的配置工作流
 - docs-to-context pipeline
+- repo context hygiene
+- GitHub workflow handoff utility
 - browser-agent recipe
 
 入口：
