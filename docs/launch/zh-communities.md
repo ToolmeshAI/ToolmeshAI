@@ -14,11 +14,11 @@ Use it for:
 The recommended order is still flagship-first:
 
 1. `mcp-saas-foundry`
-2. `safe-mcp-config`
-3. `docs-to-context`
-4. `ToolmeshAI`
-5. `awesome-mcp-workflows`
-6. `browser-agent-recipes`
+2. `mcp-smoke-test`
+3. `safe-mcp-config`
+4. `docs-to-context`
+5. `browser-agent-starter`
+6. `ToolmeshAI`
 
 ---
 
@@ -33,26 +33,32 @@ The recommended order is still flagship-first:
 ## 主推顺序
 
 1. `mcp-saas-foundry`
-2. `safe-mcp-config`
-3. `docs-to-context`
-4. `ToolmeshAI`
-5. `awesome-mcp-workflows`
-6. `browser-agent-recipes`
+2. `mcp-smoke-test`
+3. `safe-mcp-config`
+4. `docs-to-context`
+5. `browser-agent-starter`
+6. `ToolmeshAI`
 
 ## 长帖模板
 
 这两天把 GitHub 账号重新整理成了 `ToolmeshAI`，开始集中做一批更像“能拿来用”的项目，而不是继续铺很多空壳仓库。
 
-第一批里我最想先推 3 个：
+现在最适合先推的 5 个是：
 
 1. `mcp-saas-foundry`
    一个可 fork 的 SaaS 向 MCP starter blueprint，目标是补上“玩具 demo”和“团队能直接起步的 starter”之间的空白。
 
-2. `safe-mcp-config`
+2. `mcp-smoke-test`
+   一个零依赖 CLI，用来验证 stdio MCP server 是否真的能启动、initialize，并完成一次基础 probe。
+
+3. `safe-mcp-config`
    一个零依赖 CLI，在分享 MCP 配置之前先抓高风险模式，比如内联 token、危险 shell 调用、环境变量通配透传。
 
-3. `docs-to-context`
+4. `docs-to-context`
    一个零依赖 CLI，把散落文档打成一份干净的 Markdown 上下文，方便直接喂给 coding agent / LLM 工作流。
+
+5. `browser-agent-starter`
+   一个 browser-ready 的最小 starter，用 dry-run 规划和结构化产物把 browser agent workflow 先做成可信的起点。
 
 GitHub:
 https://github.com/ToolmeshAI
@@ -73,9 +79,23 @@ https://github.com/ToolmeshAI/mcp-saas-foundry
 仓库：
 https://github.com/ToolmeshAI/safe-mcp-config
 
+### `mcp-smoke-test`
+
+`mcp-smoke-test` 用来回答一个最基础的问题：这个 MCP server 到底能不能真的跑起来，并且完成一次 probe。
+
+仓库：
+https://github.com/ToolmeshAI/mcp-smoke-test
+
 ### `docs-to-context`
 
 `docs-to-context` 用来把文档打成一份 agent 能直接吃的 Markdown 上下文包，省掉手工整理。
 
 仓库：
 https://github.com/ToolmeshAI/docs-to-context
+
+### `browser-agent-starter`
+
+`browser-agent-starter` 提供一个更可信的 browser agent 起步结构：有 shared config、有 dry-run 规划、有结构化产物，不是空壳。
+
+仓库：
+https://github.com/ToolmeshAI/browser-agent-starter

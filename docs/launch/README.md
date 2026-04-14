@@ -16,11 +16,13 @@ What is here:
 Recommended posting order:
 
 1. `mcp-saas-foundry`
-2. `safe-mcp-config`
-3. `docs-to-context`
-4. `ToolmeshAI`
-5. `awesome-mcp-workflows`
-6. `browser-agent-recipes`
+2. `mcp-smoke-test`
+3. `safe-mcp-config`
+4. `docs-to-context`
+5. `browser-agent-starter`
+6. `ToolmeshAI`
+7. `awesome-mcp-workflows`
+8. `browser-agent-recipes`
 
 Asset usage:
 
@@ -44,11 +46,13 @@ Asset usage:
 建议发布顺序：
 
 1. `mcp-saas-foundry`
-2. `safe-mcp-config`
-3. `docs-to-context`
-4. `ToolmeshAI`
-5. `awesome-mcp-workflows`
-6. `browser-agent-recipes`
+2. `mcp-smoke-test`
+3. `safe-mcp-config`
+4. `docs-to-context`
+5. `browser-agent-starter`
+6. `ToolmeshAI`
+7. `awesome-mcp-workflows`
+8. `browser-agent-recipes`
 
 素材使用建议：
 

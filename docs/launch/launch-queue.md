@@ -29,11 +29,13 @@ Direct prefill patterns where supported:
 Use one flagship repo at a time. The current priority should stay:
 
 1. `mcp-saas-foundry`
-2. `safe-mcp-config`
-3. `docs-to-context`
-4. `ToolmeshAI` portfolio/org post
-5. `awesome-mcp-workflows`
-6. `browser-agent-recipes`
+2. `mcp-smoke-test`
+3. `safe-mcp-config`
+4. `docs-to-context`
+5. `browser-agent-starter`
+6. `ToolmeshAI` portfolio/org post
+7. `awesome-mcp-workflows`
+8. `browser-agent-recipes`
 
 Execution sequence:
 
@@ -41,10 +43,12 @@ Execution sequence:
 2. Post the matching `X` version the same day or the next day.
 3. Use `Reddit` once the prove-human gate is cleared.
 4. Push the Chinese long-form version to `V2EX` or `Juejin`.
-5. Move to `safe-mcp-config` only after the flagship repo has had time to collect traffic.
-6. Move to `docs-to-context` after `safe-mcp-config`.
-7. Use the `ToolmeshAI` portfolio thread and Chinese long post to cross-link the rest of the portfolio.
-8. Keep `awesome-mcp-workflows` and `browser-agent-recipes` as secondary links unless a platform-specific conversation clearly fits them.
+5. Move to `mcp-smoke-test` once the flagship repo has opened the MCP tooling conversation.
+6. Move to `safe-mcp-config` after `mcp-smoke-test`.
+7. Move to `docs-to-context` after `safe-mcp-config`.
+8. Use `browser-agent-starter` once browser-agent interest appears in replies or adjacent channels.
+9. Use the `ToolmeshAI` portfolio thread and Chinese long post to cross-link the rest of the portfolio.
+10. Keep `awesome-mcp-workflows` and `browser-agent-recipes` as secondary links unless a platform-specific conversation clearly fits them.
 
 Practical spacing:
 
@@ -60,9 +64,11 @@ Practical spacing:
 - Copy source: [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md)
 - Posting order:
   1. `mcp-saas-foundry`
-  2. `safe-mcp-config`
-  3. `docs-to-context`
-  4. `ToolmeshAI` portfolio thread
+  2. `mcp-smoke-test`
+  3. `safe-mcp-config`
+  4. `docs-to-context`
+  5. `browser-agent-starter`
+  6. `ToolmeshAI` portfolio thread
 - Next action:
   Log in, paste the matching copy, attach one repo hero asset if available, and keep each post focused on one repo.
 
@@ -73,8 +79,9 @@ Practical spacing:
 - Copy source: [hacker-news.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/hacker-news.md)
 - Posting order:
   1. `Show HN: mcp-saas-foundry – a forkable starter blueprint for SaaS-focused MCP servers`
-  2. `Show HN: safe-mcp-config – scan MCP configs for risky patterns before sharing them`
-  3. `Show HN: docs-to-context – bundle scattered docs into one Markdown context file for coding agents`
+  2. `Show HN: mcp-smoke-test – verify that a stdio MCP server actually initializes and answers a probe`
+  3. `Show HN: safe-mcp-config – scan MCP configs for risky patterns before sharing them`
+  4. `Show HN: docs-to-context – bundle scattered docs into one Markdown context file for coding agents`
 - Next action:
   Log in, submit only `mcp-saas-foundry` first, and hold the other two until there is enough time between launches.
 
@@ -86,7 +93,7 @@ Practical spacing:
 - Suggested communities:
   `r/mcp`, `r/LocalLLaMA`, `r/programming`, `r/node`, plus niche communities that allow self-promo
 - Next action:
-  Clear the prove-human gate first. Then submit one repo per subreddit, starting with `mcp-saas-foundry`.
+  Clear the prove-human gate first. Then submit one repo per subreddit, starting with `mcp-saas-foundry`, then `mcp-smoke-test`.
 
 ### V2EX
 
@@ -111,11 +118,13 @@ Practical spacing:
 | Priority | Repo | Primary link | Launch angle | First platform | Copy source | Operator note |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | `mcp-saas-foundry` | https://github.com/ToolmeshAI/mcp-saas-foundry | Strongest flagship: forkable SaaS-focused MCP starter | Hacker News | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [reddit.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/reddit.md), [hacker-news.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/hacker-news.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Use this repo to open every platform where possible. |
-| 2 | `safe-mcp-config` | https://github.com/ToolmeshAI/safe-mcp-config | Small CLI, clear pain point, easy follow-up launch | X | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [reddit.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/reddit.md), [hacker-news.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/hacker-news.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Good second wave once the flagship traffic cools down. |
-| 3 | `docs-to-context` | https://github.com/ToolmeshAI/docs-to-context | Clean utility angle for coding-agent workflows | X | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [reddit.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/reddit.md), [hacker-news.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/hacker-news.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Launch after `safe-mcp-config`, not before. |
-| 4 | `ToolmeshAI` portfolio/org | https://github.com/ToolmeshAI | Cross-link the portfolio after the top 3 repos are visible | X | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Use as a thread or long post, not as the first cold-start post. |
-| 5 | `awesome-mcp-workflows` | https://github.com/ToolmeshAI/awesome-mcp-workflows | Secondary credibility/supporting repo | Replies, comments, or portfolio thread | [README.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/README.md) | Mention when someone asks for adjacent resources. |
-| 6 | `browser-agent-recipes` | https://github.com/ToolmeshAI/browser-agent-recipes | Secondary supporting repo for browser-agent interest | Replies, comments, or portfolio thread | [README.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/README.md) | Use as a related follow-up, not a first-wave launch. |
+| 2 | `mcp-smoke-test` | https://github.com/ToolmeshAI/mcp-smoke-test | Fast interoperability check for MCP builders | X or Hacker News | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [reddit.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/reddit.md), [hacker-news.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/hacker-news.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Best second wave if MCP builders ask “how do I verify my server?” |
+| 3 | `safe-mcp-config` | https://github.com/ToolmeshAI/safe-mcp-config | Small CLI, clear pain point, easy follow-up launch | X | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [reddit.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/reddit.md), [hacker-news.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/hacker-news.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Good third wave once the MCP validation angle lands. |
+| 4 | `docs-to-context` | https://github.com/ToolmeshAI/docs-to-context | Clean utility angle for coding-agent workflows | X | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [reddit.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/reddit.md), [hacker-news.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/hacker-news.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Launch after `safe-mcp-config`, not before. |
+| 5 | `browser-agent-starter` | https://github.com/ToolmeshAI/browser-agent-starter | Runnable browser-agent starter with dry-run artifacts | X or Reddit | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [reddit.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/reddit.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Use after some browser-agent curiosity is already present. |
+| 6 | `ToolmeshAI` portfolio/org | https://github.com/ToolmeshAI | Cross-link the portfolio after the top repos are visible | X | [x.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/x.md), [zh-communities.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/zh-communities.md) | Use as a thread or long post, not as the first cold-start post. |
+| 7 | `awesome-mcp-workflows` | https://github.com/ToolmeshAI/awesome-mcp-workflows | Secondary credibility/supporting repo | Replies, comments, or portfolio thread | [README.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/README.md) | Mention when someone asks for adjacent resources. |
+| 8 | `browser-agent-recipes` | https://github.com/ToolmeshAI/browser-agent-recipes | Secondary supporting repo for browser-agent interest | Replies, comments, or portfolio thread | [README.md](/home/knox/workspace/github_work/ToolmeshAI/docs/launch/README.md) | Use as a related follow-up, not a first-wave launch. |
 
 ## Operator Checklist / 操作检查清单
 
